@@ -38,7 +38,7 @@ for (let i = 0; i < biciclette.length; i++) {
     }
 }
 
-console.log(biciLeggera);
+// console.log(biciLeggera);
 
 /* Snack2
 Creare un array di oggetti di squadre di calcio.
@@ -72,14 +72,37 @@ const footballTeam = [
         pointsScored: 0,
         sufferedFouls: 0
 
-    },
+    }
+
+];
+const footballTeamRestrict = []
+
+for (let i = 0; i < footballTeam.length; i++) {
+    const valueAssignPoints = randomNumbersGenerator(1, 100);
+    const valueAssignFouls = randomNumbersGenerator(1, 1000);
+    const team = footballTeam[i];
+    team.pointsScored = valueAssignPoints;
+    team.sufferedFouls = valueAssignFouls;
+
+    footballTeamRestrict.push(team.name, team.sufferedFouls);
+}
+
+console.log(footballTeam);
+console.log(footballTeamRestrict);
 
 
 
 
 
 
-]
+
+
+
+
+
+
+
+
 
 
 
