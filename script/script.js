@@ -95,9 +95,9 @@ for (let i = 0; i < footballTeam.length; i++) {
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 
 
-const fullArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const fullArray = ["Carlo", "Matteo", "Fabio", "Ignazio", "Luca"]
 
-const restrictArray = contentBetweenGenerator(fullArray, 4, 9);
+const restrictArray = contentBetweenGenerator(fullArray, 2, 3);
 console.log(restrictArray);
 
 

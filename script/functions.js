@@ -144,7 +144,16 @@ function wordReverse() {
 }
 
 
-// posizione compresa tra 2 indici
+// Content between
+
+/**
+ * 
+ * @param {Array} myArray 
+ * @param {num} min 
+ * @param {num} max 
+ * @returns 
+ * @abstract Return a new array with numbers between min and max
+ */
 
 function contentBetweenGenerator(myArray, min, max) {
 
@@ -152,7 +161,7 @@ function contentBetweenGenerator(myArray, min, max) {
 
     for (let i = 0; i < myArray.length; i++)
 
-        if (myArray[i] >= min && myArray[i] <= max) {
+        if (myArray[i] >= myArray[min] && myArray[i] <= myArray[max]) {
 
             newArray.push(myArray[i]);
         }
