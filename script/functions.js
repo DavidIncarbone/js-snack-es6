@@ -142,3 +142,21 @@ function wordReverse() {
 
     return reversedWord
 }
+
+
+// posizione compresa tra 2 indici
+
+function contentBetweenGenerator(myArray, min, max) {
+
+    const newArray = [];
+
+    for (let i = 0; i < myArray.length; i++)
+
+        if (myArray[i] >= min && myArray[i] <= max) {
+
+            newArray.push(myArray[i]);
+        }
+
+    return newArray;
+
+}
